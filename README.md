@@ -14,4 +14,4 @@ npm run dev
 
 - **part0** — diagrams (Mermaid)
 - **part1** — courseinfo, unicafe, anecdotes
-- **part2** — courseinfo, phonebook, countries
+- **part2** — course-information, the-phonebook, data-for-countries
