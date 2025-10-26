@@ -1,0 +1,42 @@
+.country-details {
+  margin-top: 16px;
+}
+
+.country-flag {
+  margin-top: 12px;
+  max-width: 220px;
+  height: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.weather {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.weather-overview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.weather-overview img {
+  width: 64px;
+  height: 64px;
+}
+
+.weather-description {
+  text-transform: capitalize;
+}
+
+.error {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #fdecea;
+  color: #c0392b;
+  border: 1px solid #f5c6cb;
+}
