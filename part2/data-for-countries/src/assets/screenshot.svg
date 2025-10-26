@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="600" viewBox="0 0 820 600">
+  <style>
+    .title { font: 700 36px system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+    .h2 { font: 700 22px system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+    .text { font: 16px system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+    .small { font: 14px system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+    .bullet { font: 16px system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+  </style>
+  <rect x="0" y="0" width="820" height="600" fill="#fff"/>
+
+  <!-- Search input hint -->
+  <text x="16" y="28" class="text" fill="#222">find countries</text>
+  <rect x="140" y="10" width="140" height="24" rx="4" ry="4" fill="#fff" stroke="#bbb"/>
+  <text x="148" y="27" class="small" fill="#666">Botswana</text>
+
+  <!-- Country title -->
+  <text x="16" y="84" class="title" fill="#000">Botswana</text>
+
+  <!-- Basic info -->
+  <text x="16" y="120" class="text" fill="#222">capital Gaborone</text>
+  <text x="16" y="144" class="text" fill="#222">area 582000</text>
+
+  <!-- Languages header -->
+  <text x="16" y="184" class="h2" fill="#000">languages:</text>
+  <!-- Bullets -->
+  <circle cx="28" cy="206" r="3" fill="#222"/>
+  <text x="40" y="210" class="bullet" fill="#222">English</text>
+  <circle cx="28" cy="230" r="3" fill="#222"/>
+  <text x="40" y="234" class="bullet" fill="#222">Tswana</text>
+
+  <!-- Flag placeholder -->
+  <rect x="16" y="268" width="300" height="140" rx="6" ry="6" fill="#78a9c5" stroke="#c9d6df"/>
+  <rect x="16" y="322" width="300" height="30" fill="#000"/>
+  <rect x="16" y="316" width="300" height="4" fill="#cfe5f2"/>
+  <rect x="16" y="352" width="300" height="4" fill="#cfe5f2"/>
+
+  <!-- Weather header -->
+  <text x="16" y="444" class="h2" fill="#000">Weather in Gaborone</text>
+  <text x="16" y="470" class="text" fill="#222">temperature 30.0 °C</text>
+
+  <!-- Weather icon + description -->
+  <circle cx="46" cy="506" r="16" fill="#e66a4e"/>
+  <text x="72" y="512" class="text" fill="#222">Clear Sky</text>
+
+  <text x="16" y="540" class="text" fill="#222">wind 3.1 m/s</text>
+</svg>
+

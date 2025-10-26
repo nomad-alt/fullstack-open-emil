@@ -1,16 +1,36 @@
-# React + Vite
+# The Phonebook (Full Stack Open, Part 2)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple phonebook application that demonstrates controlled forms, list rendering, filtering, and CRUD over a JSON server backend.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add people with name and number
+- Prevent duplicates by name with an alert
+- Case-insensitive filtering by name
+- Persist data to a backend using axios
+- Update an existing person's number (PUT)
+- Delete a person with confirmation (DELETE)
+- User notifications
+  - Success and error banners that auto-hide after 5s
+  - Handles stale data errors (e.g., already-deleted person)
 
-## React Compiler
+## Run
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Install deps: `npm install`
+2. Start the mock backend: `npm run server`
+   - Serves `db.json` on `http://localhost:3001`
+   - Persons endpoint: `GET/POST/PUT/DELETE /persons`
+3. In another terminal, start Vite: `npm run dev`
 
-## Expanding the ESLint configuration
+## Code Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/App.jsx` – state, effects, and handlers
+- `src/components/Filter.jsx` – search input
+- `src/components/PersonForm.jsx` – add/update form
+- `src/components/Persons.jsx` – list + delete buttons
+- `src/components/Notification.jsx` – success/error banner
+- `src/services/persons.js` – axios helpers: `getAll`, `create`, `update`, `remove`
+
+Notes:
+- Keys use backend-provided `id`s
+- JSON server must be running for create/update/delete to persist
